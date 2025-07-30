@@ -1,0 +1,1 @@
+Peak Prominence is a lightweight Python tool to detect the most prominent peaks in irregular or non-uniform time series data. Designed for scientific data analysis, it helps uncover cyclic patterns by measuring peak prominence analogically to topographical prominence.
