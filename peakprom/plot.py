@@ -16,7 +16,6 @@ def plot_peaks(
     top_n=None,
     **kwargs,
 ):
-    # Prepare working copy
     working = df.copy()
     working = working.sort_values(by=x_col, ignore_index=True)
     if index_col not in working.columns:
