@@ -1,3 +1,4 @@
-from .core import find_prominence_peaks
+from .core import find_peaks, peaks_dataframe
 from .plot import plot_peaks
-from .utils import add_index_column, split_into_segments
+
+__all__ = ['find_peaks', 'plot_peaks', 'peaks_dataframe']
