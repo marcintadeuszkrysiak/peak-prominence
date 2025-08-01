@@ -19,6 +19,7 @@ It’s designed for scientists, analysts, and hobbyists who want a simple way to
 **From GitHub (latest version)**:
 ```bash
 pip install git+https://github.com/marcintadeuszkrysiak/peak-prominence.git
+```
 
 ## Quick start
 
