@@ -33,7 +33,6 @@ def find_peaks(df: pd.DataFrame, x_col: str, y_col: str, index_col: str = 'peakp
 
 
 def peaks_dataframe(df: pd.DataFrame, x_col: str, y_col: str, index_col: str = 'peakprom_index') -> pd.DataFrame:
-    # Prepare the same working copy for consistency
     working = df.copy()
     working = working.sort_values(by=x_col, ignore_index=True)
     if index_col not in working.columns:
@@ -41,7 +40,6 @@ def peaks_dataframe(df: pd.DataFrame, x_col: str, y_col: str, index_col: str = '
 
     peaks = find_peaks(working, x_col=x_col, y_col=y_col, index_col=index_col)
 
-    # Speed up lookup by setting index
     working_indexed = working.set_index(index_col, drop=False)
     rows = []
     for idx, prom in peaks.items():
