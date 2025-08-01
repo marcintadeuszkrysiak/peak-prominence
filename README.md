@@ -22,7 +22,7 @@ pip install git+https://github.com/marcintadeuszkrysiak/peak-prominence.git
 ```
 
 ## Quick start
-
+```bash
 import pandas as pd
 from peakprom import find_peaks, peaks_dataframe, plot_peaks
 
@@ -35,7 +35,7 @@ df = pd.DataFrame({
 # Detect peaks
 peaks = find_peaks(df, x_col="x", y_col="y")
 print("Detected peaks (index → prominence):", peaks)
-
+```
 # Get peaks as a DataFrame
 peaks_df = peaks_dataframe(df, x_col="x", y_col="y")
 print(peaks_df)
