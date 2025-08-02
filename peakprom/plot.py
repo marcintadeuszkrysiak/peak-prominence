@@ -9,7 +9,6 @@ def plot_peaks(
     index_col='peakprom_index',
     figsize=(10, 5),
     annotate=True,
-    annotate_text=x,
     peak_marker='o',
     peak_color='red',
     data_label='Data',
@@ -31,13 +30,13 @@ def plot_peaks(
 
     first = True
     for _, row in peaks_df.iterrows():
-        = row[x_col]
+        x = row[x_col]
         y = row[y_col]
         prominence = row['prominence']
-        label = peak_label if first else None
+        label = f'Peak ({x_col}, prominence)' if first else None
         plt.plot(x, y, marker=peak_marker, color=peak_color, linestyle='', label=label)
         if annotate:
-            plt.annotate(f"{annotate_text}", (x, y),
+            plt.annotate(f"{x:.0f}, {prominence:.2f}", (x, y),
                          textcoords="offset points", xytext=(0, 6),
                          ha='center', fontsize=8, color=peak_color)
         first = False
