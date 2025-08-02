@@ -9,7 +9,7 @@ def plot_peaks(
     index_col='peakprom_index',
     figsize=(10, 5),
     annotate=True,
-    annotate_text=x
+    annotate_text=x,
     peak_marker='o',
     peak_color='red',
     data_label='Data',
