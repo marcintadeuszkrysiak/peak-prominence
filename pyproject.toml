@@ -13,8 +13,8 @@ dependencies = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/yourusername/peak-prominence"
-"Issue Tracker" = "https://github.com/yourusername/peak-prominence/issues"
+"Homepage" = "https://github.com/marcintadeuszkrysiak/peak-prominence"
+"Issue Tracker" = "https://github.com/marcintadeuszkrysiak/peak-prominence/issues"
 
 [build-system]
 requires = ["setuptools"]
